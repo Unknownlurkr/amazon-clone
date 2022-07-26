@@ -10,7 +10,7 @@ function Header() {
         src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pngmart.com%2Ffiles%2F8%2FAmazon-PNG-Transparent-Image.png&f=1&nofb=1"
       />
       <div className="header__search">
-        <input className="header__searchIn" type="text" />
+        <input className="header__searchInput" type="text" />
         <SearchIcon className="header__searchIcon" />
       </div>
       <div className="header__nav">
