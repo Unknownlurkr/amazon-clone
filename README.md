@@ -1,3 +1,6 @@
+# React Amazon Clone
+This project was created to firmillarize myself with React by creating a Fullstack ecommerce Amazon clone.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
