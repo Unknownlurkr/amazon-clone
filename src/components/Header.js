@@ -5,7 +5,9 @@ import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 
 //chose better amazon logo with white text
 //'npm i -s @material-ui/core if have trouble with icons
-//dark logo text and white logo text
+//dark logo text and white logo text:
+//https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pngmart.com%2Ffiles%2F8%2FAmazon-PNG-Transparent-Image.png&f=1&nofb=1
+//turned into white text using gimp, not a desginer but it is a start!
 
 function Header() {
   return (
@@ -13,7 +15,7 @@ function Header() {
 
       <img
         className="header__logo"
-        src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pngmart.com%2Ffiles%2F8%2FAmazon-PNG-Transparent-Image.png&f=1&nofb=1"
+        src="https://raw.githubusercontent.com/Unknownlurkr/amazon-clone/master/public/amazon-logo-light.png"
       />
 
       <div className="header__search">
