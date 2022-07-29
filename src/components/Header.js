@@ -2,12 +2,13 @@
 import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
-
-//chose better amazon logo with white text
+import "../styling/Header.css";
 //'npm i -s @material-ui/core if have trouble with icons
 //dark logo text and white logo text:
 //https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pngmart.com%2Ffiles%2F8%2FAmazon-PNG-Transparent-Image.png&f=1&nofb=1
+
 //turned into white text using gimp, not a desginer but it is a start!
+//grab actual amazon products and store as json
 
 function Header() {
   return (
