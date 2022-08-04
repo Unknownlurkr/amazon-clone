@@ -9,21 +9,21 @@ import Checkout from "./components/Checkout";
 function App() {
   return (
     //BEM
-    <Router>
-      <div className="App">
+    <div className="App">
+    <Header />
+      <Router>
         <Switch>
-        <Route path="/checkout" >
-          <Header />
-          <Checkout/>
+          <Route path="/checkout">
+            
+            <Checkout />
           </Route>
-          <Route path="/" >
-          <Header />
-          <Home />
+          <Route path="/">
+            
+            <Home />
           </Route>
-
         </Switch>
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 
