@@ -3,6 +3,7 @@ import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import "../styling/Header.css";
+import { useStateValue } from "../StateProvider";
 //import { Link } from "react-router-dom";
 //'npm i -s @material-ui/core if have trouble with icons
 //dark logo text and white logo text:
@@ -13,6 +14,8 @@ import "../styling/Header.css";
 //having issues with Link react-router-dom v6 as url param change
 //but doest redirect have to read more V6 docs using a tage for now
 function Header() {
+  const[{basket},dispatch] = useStateValue();
+
   return (
     <div className="header">
       <a href='/'>
@@ -44,7 +47,7 @@ function Header() {
         <a href='/checkout'>
           <div className="header__optionBasket">
             <ShoppingBasketIcon />
-            <span className="header__optionLineTwo header__basketCount">0</span>
+            <span className="header__optionLineTwo header__basketCount">{basket?.length}</span>
           </div>
           </a>
       </div>
