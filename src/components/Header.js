@@ -14,16 +14,16 @@ import { useStateValue } from "../StateProvider";
 //having issues with Link react-router-dom v6 as url param change
 //but doest redirect have to read more V6 docs using a tage for now
 function Header() {
-  const[{basket},dispatch] = useStateValue();
+  const [{ basket }] = useStateValue();
 
   return (
     <div className="header">
-      <a href='/'>
+      <a href="/">
         <img
           className="header__logo"
           src="https://raw.githubusercontent.com/Unknownlurkr/amazon-clone/master/public/amazon-logo-light.png"
         />
-        </a>
+      </a>
       <div className="header__search">
         <input className="header__searchInput" type="text" />
         <SearchIcon className="header__searchIcon" />
@@ -44,12 +44,14 @@ function Header() {
           <span className="header__optionLineOne">Your</span>
           <span className="header__optionLineTwo">Prime</span>
         </div>
-        <a href='/checkout'>
+        <a href="/checkout">
           <div className="header__optionBasket">
             <ShoppingBasketIcon />
-            <span className="header__optionLineTwo header__basketCount">{basket?.length}</span>
+            <span className="header__optionLineTwo header__basketCount">
+              {basket?.length}
+            </span>
           </div>
-          </a>
+        </a>
       </div>
     </div>
   );

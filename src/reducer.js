@@ -3,7 +3,6 @@
 //states used-starts with empty basket  and guest user
 export const initialState = {
   basket: [],
-  user: null,
 };
 
 //selector-takes basket and return following:

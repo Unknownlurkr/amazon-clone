@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./components/Header";
 import Home from "./components/Home";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route,Switch } from "react-router-dom";
 import Checkout from "./components/Checkout";
 /**  <Header />
           <Home />*/
@@ -17,8 +17,8 @@ function App() {
           <Checkout />
           </Route>
           <Route path="/">
-          <Home />
-          </Route>
+         <Home />
+       </Route>
         </Switch>
       </Router>
     </div>
@@ -26,3 +26,10 @@ function App() {
 }
 
 export default App;
+
+//PROBLEM IS REACT V6 AMIN VERSIOON SO UNINSTALL
+//REACT ROUTER DOM V5
+// THE USE LINKS INSTED OF A
+//SEE IF TRANSFER TODATA LAYER PROPERLY
+//!!!!!!!! SHOULD FIX BUG
+//V6 FUCKIN WITH THIS NOT SCALABLE AT ALL

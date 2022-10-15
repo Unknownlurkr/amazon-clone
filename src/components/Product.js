@@ -5,7 +5,7 @@ import "../styling/Product.css";
 function Product({ id, title, image, price, rating }) {
     //state and dispatch-how data manipulated
     const [{basket},dispatch] = useStateValue();
-    console.log("the basket:", basket);
+    //console.log("the basket:", basket);
     const addToBasket = () => {
       //dispatch action(item) 
       //used to push item based on product props into data layer
@@ -23,7 +23,7 @@ function Product({ id, title, image, price, rating }) {
     };
 
   return (
-    <div className="product">
+    <div className="product" >
       <div className="product__info">
         <p>{title}</p>
         <p className="product__price">
